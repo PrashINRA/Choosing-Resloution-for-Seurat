@@ -10,3 +10,5 @@ Seurat <- FindClusters(Seurat, resolution =  seq(from = 0.1, to = 0.9, by = 0.1)
 clust_seurat <- Seurat@meta.data %>% dplyr::select(dplyr::contains("RNA_snn_res."))
 clustree(clust_seurat, prefix="RNA_snn_res.")
 ```
+#This Will Generate a tree of cluster with different reolution
+![tree_seu](https://user-images.githubusercontent.com/26623347/157477760-bc77d82e-d31e-4788-978d-13b82df29873.png)
